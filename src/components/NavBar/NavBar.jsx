@@ -99,7 +99,7 @@ const NavBar = () => {
           link: "/agri-business",
         },
         {
-          title: "Diary",
+          title: "Dairy",
           link: "/diary",
         },
         {
