@@ -3,7 +3,7 @@ import "./Innovation.css";
 
 const iconMapping = {
   "Agri Business": { fontSize: "100px", iconClass: "fa-solid fa-wheat-awn", color: "#b5b7ba" },
-  "Diary": {fontSize: "100px", iconClass: "fa-solid fa-cow", color: "#b5b7ba" },
+  "Dairy": {fontSize: "100px", iconClass: "fa-solid fa-cow", color: "#b5b7ba" },
   "FMCG & CPG": {fontSize: "100px", iconClass: "fa-solid fa-truck-fast", color: "#b5b7ba" },
   "MRO & Spares": {fontSize: "100px", iconClass: "fa-solid fa-screwdriver-wrench", color: "#b5b7ba" },
   "FMCG & CPG": {fontSize: "100px", iconClass: "fa-solid fa-truck-fast", color: "#b5b7ba" },
