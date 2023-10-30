@@ -92,7 +92,7 @@ export const SidebarData = [
         path: "/agri-business",
       },
       {
-        title: "Diary",
+        title: "Dairy",
         path: "/diary",
       },
       {
