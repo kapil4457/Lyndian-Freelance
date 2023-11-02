@@ -1,14 +1,15 @@
 import React from "react";
 import "./IndependentAssessmentAndTesting.css";
 import { NavLink } from "react-router-dom";
-
+import iaat_1 from "../Images/IAAT_1.jpg";
+import iaat_2 from "../Images/IAAT_2.jpg";
 const IndependentAssessmentAndTesting = () => {
   return (
     <>
       <div id="independent-assessment-and-testing-image-container">
         <img
           id="independent-assessment-and-testing-image"
-          src="https://themanagementtechnician.com/wp-content/uploads/2022/11/atest.jpg"
+          src={iaat_1}
           alt=""
         />
         <h2 id="independent-assessment-and-testing-heading">
@@ -27,10 +28,7 @@ const IndependentAssessmentAndTesting = () => {
       </div>
 
       <div id="independent-assessment-and-testing-content">
-        <img
-          src="https://elearningindustry.com/wp-content/uploads/2021/05/end-to-end-assessment-supporting-the-student-education-journey.png"
-          alt=""
-        />
+        <img src={iaat_2} alt="" />
         <div className="independent-assessment-and-testing-data">
           <h1>Independent Assessment And Testing</h1>
           <span>

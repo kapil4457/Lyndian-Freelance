@@ -1,7 +1,7 @@
 import React from "react";
 import "./WhyChooseUs.css";
 import { NavLink } from "react-router-dom";
-
+import img1 from "./Images/img1.jpg";
 const WhyChooseUs = () => {
   return (
     <div id="why-choose-us-choose-area">
@@ -9,11 +9,7 @@ const WhyChooseUs = () => {
         <div id="why-choose-us-feature_main_wrap">
           <div id="why-choose-us-row" className="align-items-centre">
             <div id="why-choose-us-column">
-              <img
-                id="why-choose-us-about-image"
-                src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80"
-                alt=""
-              />
+              <img id="why-choose-us-about-image" src={img1} alt="" />
             </div>
             <div id="why-choose-us-column">
               <div id="why-choose-us-features_info">

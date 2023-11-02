@@ -11,11 +11,7 @@ const PageUnderConstruction = () => {
   return (
     <div id="not-found">
       <div id="inner-div-not-found">
-        <svg
-          fill="none"
-          viewBox="0 0 834 690"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg fill="none" viewBox="0 0 834 690">
           {" "}
           <g clip-path="url(#clip0)" id="undraw_dev_productivity_umsq 1">
             {" "}

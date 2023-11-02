@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./PostPage.css";
 import React, { useEffect } from "react";
-
+import postbanner from "../Images/post-banner.jpg";
+import post4 from "../Images/post4.jpg";
 const PostPage = () => {
   useEffect(() => {
     window.scroll({
@@ -13,11 +14,7 @@ const PostPage = () => {
   return (
     <div id="supply-chain-post-container">
       <div id="supply-chain-post-image-container">
-        <img
-          id="supply-chain-post-image"
-          src="https://www.kinaxis.com/sites/default/files/paragraphs/hero/applications-banner-opt.jpg"
-          alt=""
-        />
+        <img id="supply-chain-post-image" src={postbanner} alt="" />
         <h2 id="supply-chain-post-heading">Supply Chain</h2>
 
         <div id="supply-chain-post-crumbs">
@@ -30,10 +27,7 @@ const PostPage = () => {
       </div>
 
       <div id="supply-chain-post-content">
-        <img
-          src="https://media.licdn.com/dms/image/C4E12AQFc90EiyOPqkw/article-cover_image-shrink_423_752/0/1520089987664?e=1701907200&v=beta&t=Dv5POUXtTcpe5jG9Bpzgu8bssIDX5ojCD005CTZ6Qyk"
-          alt=""
-        />
+        <img src={post4} alt="" />
         <div className="supply-chain-post-data">
           <h1>Every Manager Wants a Control Tower!</h1>
           <span>
@@ -160,7 +154,8 @@ const PostPage = () => {
                 messages to your 3PL company?
               </li>
               <li>
-                Is there a ready made taxonomy of Supply Chain KPIs based on  &nbsp;
+                Is there a ready made taxonomy of Supply Chain KPIs based on
+                &nbsp;
                 <b>Industry emphasis</b> (not everyone out there is motivated by
                 Gartner's top20 ITO and 3 year ROA though that can at best serve
                 to juxtapose)?. If I were a Supply Chain VP of a Pharmaceutical

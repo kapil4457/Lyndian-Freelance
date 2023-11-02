@@ -1,7 +1,45 @@
 import React from "react";
 import "./Innovation.css";
+import img1_1 from "./Images/img1_1.jpg";
+import img1_2 from "./Images/img1_2.jpg";
+import img2_1 from "./Images/img2_1.jpg";
+import img2_2 from "./Images/img2_2.jpg";
+import img3_1 from "./Images/img3_1.jpg";
+import img3_2 from "./Images/img3_2.jpg";
+import img4_1 from "./Images/img4_1.jpg";
+import img4_2 from "./Images/img4_2.jpg";
+import img5_1 from "./Images/img5_1.jpg";
+import img5_2 from "./Images/img5_2.jpeg";
+import img6_1 from "./Images/img6_1.jpg";
+import img6_2 from "./Images/img6_2.jpg";
+const iconMapping = {
+  "Agri Business": {
+    fontSize: "100px",
+    iconClass: "fa-solid fa-wheat-awn",
+    color: "#b5b7ba",
+  },
+  Dairy: { fontSize: "100px", iconClass: "fa-solid fa-cow", color: "#b5b7ba" },
+  "FMCG & CPG": {
+    fontSize: "100px",
+    iconClass: "fa-solid fa-truck-fast",
+    color: "#b5b7ba",
+  },
+  "MRO & Spares": {
+    fontSize: "100px",
+    iconClass: "fa-solid fa-screwdriver-wrench",
+    color: "#b5b7ba",
+  },
+  "FMCG & CPG": {
+    fontSize: "100px",
+    iconClass: "fa-solid fa-truck-fast",
+    color: "#b5b7ba",
+  },
+  // Add mappings for other titles here
+};
 
-const InnovationContainer = ({ image, title, backgroundImage }) => {
+const InnovationContainer = ({ title, image, backgroundImage }) => {
+  const iconInfo = iconMapping[title];
+
   return (
     <>
       <a style={{ textDecoration: "none" }} href="">
@@ -14,7 +52,14 @@ const InnovationContainer = ({ image, title, backgroundImage }) => {
             />
           </div>
           <div className="hover-content">
-            <img className="Innovationimage" src={`${image}`} alt="" />
+            {iconInfo ? ( // Check if there is an icon mapping for the title
+              <i
+                className={iconInfo.iconClass}
+                style={{ color: iconInfo.color, fontSize: iconInfo.fontSize }}
+              />
+            ) : (
+              <img className="Innovationimage" src={`${image}`} alt="" />
+            )}
             <span className="InnovationP">{title}</span>
           </div>
         </div>
@@ -22,57 +67,41 @@ const InnovationContainer = ({ image, title, backgroundImage }) => {
     </>
   );
 };
+
 const Innovation = () => {
   const Innovationarr = [
     {
-      image:
-        "https://www.kinaxis.com/sites/default/files/styles/max_650x650_webp/public/paragraphs/block-list/plane-icon-white.png.webp?itok=qZ7ObwqD",
-      title: "Aerospace and defense",
-      backgroundImage:
-        "https://media.istockphoto.com/id/1289962301/photo/young-male-engineer-checking-the-airplane-jet.jpg?s=612x612&w=0&k=20&c=b1x4eFxpeJ4dwpfW4wNfFzBUSCiB-A9Oc_UkBgYxTfg=",
+      image: `${img1_1}`,
+      title: "Dairy",
+      backgroundImage: `${img1_2}`,
     },
     {
-      image:
-        "https://www.kinaxis.com/sites/default/files/styles/max_650x650_webp/public/paragraphs/block-list/car-icon-white.png.webp?itok=_zaf1OV7",
-      title: "Automotive",
-      backgroundImage:
-        "https://media.istockphoto.com/id/182668513/photo/automotive-industry.jpg?s=612x612&w=0&k=20&c=-TczpCGXZXBjqTAPdLoukjbZCtEHu8QfGbJJuFFT4rA=",
+      image: `${img2_1}`,
+      title: "Agri Business",
+      backgroundImage: `${img2_2}`,
     },
     {
-      image:
-        "https://www.kinaxis.com/sites/default/files/styles/max_650x650_webp/public/paragraphs/block-list/products-icon-white.png.webp?itok=fDXvul_B",
-      title: "Consumer products",
-      backgroundImage:
-        "https://img.freepik.com/free-photo/female-warehouse-workers-checking-cardboard-box-before-final-packing-while-working-distribution-warehouse_637285-3972.jpg",
-    },
-    {
-      image:
-        "https://www.kinaxis.com/sites/default/files/styles/max_650x650_webp/public/paragraphs/block-list/computer-chip-icon-white.png.webp?itok=tTpabA3o",
-      title: "High-tech and electronics",
-      backgroundImage:
-        "https://images.unsplash.com/photo-1562408590-e32931084e23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGlnaCUyMHRlY2h8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
-    },
-    {
-      image:
-        "https://www.kinaxis.com/sites/default/files/styles/max_650x650_webp/public/paragraphs/block-list/factory-icon-white.png.webp?itok=69nm556P",
-      title: "Industrial",
-      backgroundImage:
-        "https://media.istockphoto.com/id/1352464951/photo/concentrated-engineer-working-with-laptop-during-night-shift-in-gas-and-oil-industry-station.jpg?s=612x612&w=0&k=20&c=bhgu7PYlDG3rdd-0IKRTEm0vt2mv8TGMbxi3rvRTLFE=",
-    },
-    {
-      image:
-        "https://www.kinaxis.com/sites/default/files/styles/max_650x650_webp/public/paragraphs/block-list/test-tube-icon-white.png.webp?itok=CA9uOqHT",
-      title: "Life sciences",
-      backgroundImage:
-        "https://media.istockphoto.com/id/1309776503/photo/female-medical-research-scientist-looks-at-biological-samples-before-analysing-it-under.jpg?s=612x612&w=0&k=20&c=U2weZr2beZqnJIf5DBgoQZG-e8gCEk--OcVDdmF3T7I=",
-    },
-    {
-      image:
-        "https://www.kinaxis.com/sites/default/files/styles/max_650x650_webp/public/paragraphs/block-list/Kinaxis%20Retail%20Icon%20White.png.webp?itok=Vw7CeO-k",
+      image: `${img3_1}`,
       title: "Retail",
-      backgroundImage:
-        "https://content.jdmagicbox.com/comp/indore/72/0731p731std1520772/catalogue/reliance-fresh-indore-gpo-indore-pa963w.jpg",
+      backgroundImage: `${img3_2}`,
     },
+    {
+      image: `${img4_1}`,
+      title: "FMCG & CPG",
+      backgroundImage: `${img4_2}`,
+    },
+    {
+      image: `${img5_1}`,
+      title: "MRO & Spares",
+      backgroundImage: `${img5_2}`,
+    },
+    {
+      image: `${img6_1}`,
+      title: "Pharmaceuticals",
+      backgroundImage: `${img6_2}`,
+    },
+
+    // Add more items as needed
   ];
 
   return (
@@ -84,8 +113,8 @@ const Innovation = () => {
         <div className="InnovationContainerDIv">
           {Innovationarr.map((ele, key) => (
             <InnovationContainer
-              image={ele.image}
               title={ele.title}
+              image={ele.image}
               backgroundImage={ele.backgroundImage}
               key={key}
             />

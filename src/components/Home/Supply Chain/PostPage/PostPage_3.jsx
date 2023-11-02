@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./PostPage.css";
 import React, { useEffect } from "react";
-
+import postbanner from "../Images/post-banner.jpg";
+import post3 from "../Images/post3.jpg";
 const PostPage = () => {
   useEffect(() => {
     window.scroll({
@@ -13,11 +14,7 @@ const PostPage = () => {
   return (
     <div id="supply-chain-post-container">
       <div id="supply-chain-post-image-container">
-        <img
-          id="supply-chain-post-image"
-          src="https://www.kinaxis.com/sites/default/files/paragraphs/hero/applications-banner-opt.jpg"
-          alt=""
-        />
+        <img id="supply-chain-post-image" src={postbanner} alt="" />
         <h2 id="supply-chain-post-heading">Supply Chain</h2>
 
         <div id="supply-chain-post-crumbs">
@@ -30,10 +27,7 @@ const PostPage = () => {
       </div>
 
       <div id="supply-chain-post-content">
-        <img
-          src="https://media.licdn.com/dms/image/C5112AQGWow9rBAL-rg/article-cover_image-shrink_423_752/0/1540387987705?e=1701907200&v=beta&t=_f6PcoF6OZv6LVTbpw3goW_3gXzmy622YozZH8OnaIk"
-          alt=""
-        />
+        <img src={post3} alt="" />
         <div className="supply-chain-post-data">
           <h1>Predicting Auto Sales: Science or Scientology!</h1>
           <span>

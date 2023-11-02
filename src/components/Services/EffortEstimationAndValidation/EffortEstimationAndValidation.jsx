@@ -1,16 +1,13 @@
 import React from "react";
 import "./EffortEstimationAndValidation.css";
 import { NavLink } from "react-router-dom";
-
+import eeav_1 from "../Images/EEAV_1.jpg";
+import eeav_2 from "../Images/EEAV_2.jpg";
 const EffortEstimationAndValidation = () => {
   return (
     <div id="effort-estimation-and-validation-container">
       <div id="effort-estimation-and-validation-image-container">
-        <img
-          id="effort-estimation-and-validation-image"
-          src="https://themanagementtechnician.com/wp-content/uploads/2022/10/win.jpg"
-          alt=""
-        />
+        <img id="effort-estimation-and-validation-image" src={eeav_1} alt="" />
         <h2 id="effort-estimation-and-validation-heading">
           Effort Estimation and Validation
         </h2>
@@ -27,10 +24,7 @@ const EffortEstimationAndValidation = () => {
       </div>
 
       <div id="effort-estimation-and-validation-content">
-        <img
-          src="https://themanagementtechnician.com/wp-content/uploads/2022/10/s1.jpg"
-          alt=""
-        />
+        <img src={eeav_2} alt="" />
         <div className="effort-estimation-and-validation-data">
           <h1>Effort Estimation And Validation</h1>
           <span>

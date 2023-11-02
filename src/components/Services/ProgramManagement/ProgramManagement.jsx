@@ -1,33 +1,26 @@
 import React from "react";
 import "./ProgramManagement.css";
 import { NavLink } from "react-router-dom";
-
+import pm_1 from "../Images/PM_1.jpg";
+import pm_2 from "../Images/PM_2.jpg";
 const ProgramManagement = () => {
   return (
     <div id="program-management-container">
       <div id="program-management-image-container">
-        <img
-          id="program-management-image"
-          src="https://themanagementtechnician.com/wp-content/uploads/2022/10/ob.jpg"
-          alt=""
-        />
+        <img id="program-management-image" src={pm_1} alt="" />
         <h2 id="program-management-heading">Program Management</h2>
 
-        <div id="program-management-crumbs" >
-            <NavLink to={"/"}>Home</NavLink>
+        <div id="program-management-crumbs">
+          <NavLink to={"/"}>Home</NavLink>
           <span className="program-management-gap">
             <i className="fa-solid fa-chevron-right"></i>
           </span>
           <span className="program-management-current">Program Management</span>
         </div>
-
       </div>
 
       <div id="program-management-content">
-        <img
-          src="https://themanagementtechnician.com/wp-content/uploads/2022/10/vission.jpg"
-          alt=""
-        />
+        <img src={pm_2} alt="" />
         <div className="program-management-data">
           <h1>Program Management</h1>
           <span>

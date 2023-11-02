@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./PostPage.css";
 import React, { useEffect } from "react";
-
+import postbanner from "../Images/post-banner.jpg";
+import post1 from "../Images/post1.jpg";
 const PostPage = () => {
   useEffect(() => {
     window.scroll({
@@ -14,11 +15,7 @@ const PostPage = () => {
   return (
     <div id="supply-chain-post-container">
       <div id="supply-chain-post-image-container">
-        <img
-          id="supply-chain-post-image"
-          src="https://www.kinaxis.com/sites/default/files/paragraphs/hero/applications-banner-opt.jpg"
-          alt=""
-        />
+        <img id="supply-chain-post-image" src={postbanner} alt="" />
         <h2 id="supply-chain-post-heading">Supply Chain</h2>
 
         <div id="supply-chain-post-crumbs">
@@ -31,10 +28,7 @@ const PostPage = () => {
       </div>
 
       <div id="supply-chain-post-content">
-        <img
-          src="https://media.licdn.com/dms/image/C5112AQFikAQ9MnYKnA/article-cover_image-shrink_600_2000/0/1548939478692?e=1701907200&v=beta&t=x-IlpUep9e9kMM3iQN8_LhUDPcvvXg9rl6prulJpnCc"
-          alt=""
-        />
+        <img src={post1} alt="" />
         <div className="supply-chain-post-data">
           <h1>Last Mile Logistics: Who Must Optimize?</h1>
           <span>

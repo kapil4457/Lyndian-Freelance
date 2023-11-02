@@ -23,6 +23,7 @@ import Denis from "./components/Team/teamResume/Denis"
 import Vivek from "./components/Team/teamResume/Vivek"
 import Raghunath from "./components/Team/teamResume/Raghunath"
 import Ashish from "./components/Team/teamResume/Ashish"
+import Akhilesh from "./components/Team/teamResume/akhilesh"
 function App() {
   return (
     <>
@@ -57,6 +58,7 @@ function App() {
         <Route path="/people/people3" element={<Vivek />} />
         <Route path="/people/people4" element={<Raghunath />} />
         <Route path="/people/people5" element={<Ashish />} />
+        <Route path="/people/people6" element={<Akhilesh />} />
         
         {/* <Route path="/blogs" element={<Blog />} /> */}
 

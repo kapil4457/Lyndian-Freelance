@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import "./PostPage.css";
 import React, { useEffect } from "react";
-
+import postbanner from "../Images/post-banner.jpg";
+import post2 from "../Images/post2.jpg";
 const PostPage = () => {
   useEffect(() => {
     window.scroll({
@@ -13,11 +14,7 @@ const PostPage = () => {
   return (
     <div id="supply-chain-post-container">
       <div id="supply-chain-post-image-container">
-        <img
-          id="supply-chain-post-image"
-          src="https://www.kinaxis.com/sites/default/files/paragraphs/hero/applications-banner-opt.jpg"
-          alt=""
-        />
+        <img id="supply-chain-post-image" src={postbanner} alt="" />
         <h2 id="supply-chain-post-heading">Supply Chain</h2>
 
         <div id="supply-chain-post-crumbs">
@@ -30,10 +27,7 @@ const PostPage = () => {
       </div>
 
       <div id="supply-chain-post-content">
-        <img
-          src="https://media.licdn.com/dms/image/C5112AQFMxtUuIB4sWw/article-cover_image-shrink_600_2000/0/1542032251294?e=1701907200&v=beta&t=U62symjw_juMa5ogGxAby12E47Hp_Br87SfL3eEuusQ"
-          alt=""
-        />
+        <img src={post2} alt="" />
         <div className="supply-chain-post-data">
           <h1>
             Of Predictive Analytics and Product Life Cycle Management: The Case

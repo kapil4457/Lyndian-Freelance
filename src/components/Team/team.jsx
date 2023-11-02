@@ -79,6 +79,12 @@ const teamMembers = [
     description: "Ashish Garg, MBA (SCM), SAP S4, ECC, APO, IBP O2C, P2P, Planning, Fulfilment, Forecasting, SME",
     linkedin: "/people/people5",
   },
+  {
+    name: "Akhilesh Airen",
+    image: "/akilesh.jpeg",
+    description: "Supply Chain | Operations Research",
+    linkedin: "/people/people6",
+  },
 ];
 
 export default Team;

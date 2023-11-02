@@ -1,16 +1,13 @@
 import React from "react";
 import "./DesignAudit.css";
 import { NavLink } from "react-router-dom";
-
+import da_1 from "../Images/DA_1.jpg";
+import da_2 from "../Images/DA_2.jpg";
 const DesignAudit = () => {
   return (
     <>
       <div id="design-audit-image-container">
-        <img
-          id="design-audit-image"
-          src="https://themanagementtechnician.com/wp-content/uploads/2022/10/big.jpg"
-          alt=""
-        />
+        <img id="design-audit-image" src={da_1} alt="" />
         <h2 id="design-audit-heading">Design Audit</h2>
 
         <div id="design-audit-crumbs">
@@ -23,10 +20,7 @@ const DesignAudit = () => {
       </div>
 
       <div id="design-audit-content">
-        <img
-          src="https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg"
-          alt=""
-        />
+        <img src={da_2} alt="" />
         <div className="design-audit-data">
           <h1>Design Audit</h1>
           <span>
