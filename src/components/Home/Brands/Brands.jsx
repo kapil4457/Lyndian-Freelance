@@ -1,6 +1,22 @@
 import React from "react";
 import "./brand.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import adidasLogo from "./Images/adidas.png";
+import jgSummit from "./Images/jgsummit-logo.png";
+import petroRabigh from "./Images/petro-rabigh-logo.png";
+import lycraLogo from "./Images/lycra-logo.png";
+import uplUnited from "./Images/upl-united-logo.png";
+import glenmarkLogo from "./Images/Glenmark_Pharmaceuticals_logo.png";
+import sabraLogo from "./Images/sabra_logo.webp";
+import AbdulLatifLogo from "./Images/Abdul-Latif-Logo.png";
+import Crest from "./Images/Crest.jpg";
+import fonterra from "./Images/fonterra.png";
+import moglix from "./Images/moglix.png";
+import Novartis from "./Images/Novartis.png";
+import sabic from "./Images/sabic.png";
+import tata from "./Images/tata.jpg";
+import yaskawa from "./Images/yaskawa.png";
+
 function Brands() {
   return (
     <>
@@ -20,94 +36,49 @@ function Brands() {
               </div>
 
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="https://www.transparentpng.com/thumb/adidas-logo/hd-adidas-logo-clipart-3.png"
-                />
+                <img className="brandimage" src={adidasLogo} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="https://www.jgsummit.com.ph/annualreport2019/wp-content/uploads/jgsummit-logo-horizontal.png"
-                />
+                <img className="brandimage" src={jgSummit} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="https://seeklogo.com/images/P/petro-rabigh-logo-0982F5EDFC-seeklogo.com.png"
-                />
+                <img className="brandimage" src={petroRabigh} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="https://www.lycra.com/sites/lycra/files/2023-06/lycra-logo-brands-jM.png"
-                />
+                <img className="brandimage" src={lycraLogo} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="https://seeklogo.com/images/U/upl-united-phosphorus-limited-logo-5F4673A2C1-seeklogo.com.png?v=638246735760000000"
-                />
+                <img className="brandimage" src={uplUnited} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Glenmark_Pharmaceuticals_logo.png/1280px-Glenmark_Pharmaceuticals_logo.png"
-                />
+                <img className="brandimage" src={glenmarkLogo} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="https://www.sabra.com/binaries/content/gallery/sabra/content/new_sabra_logo.jpg/new_sabra_logo.jpg/sabra%3Axlargeretina"
-                />
+                <img className="brandimage" src={sabraLogo} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Logo-Abdul-Latif-Jameel-co.png?20160414091944"
-                />
+                <img className="brandimage" src={AbdulLatifLogo} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="/Crest.jpg"
-                />
+                <img className="brandimage" src={Crest} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="/fonterra.png"
-                />
+                <img className="brandimage" src={fonterra} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="/moglix.png"
-                />
+                <img className="brandimage" src={moglix} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="/Novartis.png"
-                />
+                <img className="brandimage" src={Novartis} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="/sabic.png"
-                />
+                <img className="brandimage" src={sabic} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="/tata.jpg"
-                />
+                <img className="brandimage" src={tata} />
               </div>
               <div className="tcontent">
-                <img
-                  className="brandimage"
-                  src="/yaskawa.png"
-                />
+                <img className="brandimage" src={yaskawa} />
               </div>
             </div>
           </div>

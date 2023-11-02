@@ -1,16 +1,14 @@
 import React from "react";
 import "./AboutUs.css";
 import { NavLink } from "react-router-dom";
-
+import backgroundImage from "./Images/background.jpg";
+import img1 from "./Images/img1.jpg";
+import img2 from "./Images/img2.jpg";
 const AboutUs = () => {
   return (
     <div id="about-us-container">
       <div id="about-us-image-container">
-        <img
-          id="about-us-image"
-          src="https://www.kinaxis.com/sites/default/files/styles/max_2600x2600/public/2023-05/kinaxis-2023-gartner-magic-quadrant-webbanner.webp?itok=gsFGGuBs"
-          alt=""
-        />
+        <img id="about-us-image" src={backgroundImage} alt="" />
         <h2 id="about-us-heading">About Us</h2>
 
         <div id="about-us-crumbs">
@@ -23,10 +21,7 @@ const AboutUs = () => {
       </div>
 
       <div id="about-us-content">
-        <img
-          src="https://www.kinaxis.com/sites/default/files/styles/max_2600x2600/public/paragraphs/switchbacks/investor-relations-switchback.jpg.webp?itok=ZByQkxsW"
-          alt=""
-        />
+        <img src={img1} alt="" />
         <div className="about-us-data">
           <h1>About Us</h1>
           <span>
@@ -98,10 +93,7 @@ const AboutUs = () => {
             </ol>
           </span>
         </div>
-        <img
-          src="https://www.kinaxis.com/sites/default/files/styles/max_2600x2600/public/paragraphs/switchbacks/leadership-switchback.jpg.webp?itok=ZtTEDOch"
-          alt=""
-        />
+        <img src={img2} alt="" />
       </div>
     </div>
   );

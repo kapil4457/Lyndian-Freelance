@@ -2,7 +2,8 @@ import "./Blog.css";
 import { NavLink } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { post_content } from "./post_content";
-
+import blogBanner from "./Images/blog-banner.jpg";
+import blogRightImage from "./Images/blog-right-image.jpg";
 const Post = ({
   img_link,
   post_heading,
@@ -13,8 +14,8 @@ const Post = ({
 }) => {
   return (
     <div className="article-featured">
-      <div className="article-image" >
-      <img src={img_link} alt=" " />
+      <div className="article-image">
+        <img src={img_link} alt=" " />
       </div>
       <h2 className="article-title">{post_heading}</h2>
       <p className="article-info">
@@ -94,11 +95,7 @@ const Blog = () => {
   return (
     <div id="blog-main-container">
       <div id="blog-image-container">
-        <img
-          id="blog-image"
-          src="https://themanagementtechnician.com/wp-content/uploads/2020/11/blog-banner.jpg"
-          alt=""
-        />
+        <img id="blog-image" src={blogBanner} alt="" />
         <h2 id="blog-heading">Blog</h2>
 
         <div id="blog-crumbs">
@@ -170,10 +167,7 @@ const Blog = () => {
           </div>
           <div id="blog-image-box-wrapper">
             <div id="blog-sidebar-pic">
-              <img
-                src="https://www.tmt.paridhiwebtech.xyz/wp-content/uploads/2020/10/blog-right-image.jpg"
-                alt="/"
-              />
+              <img src={blogRightImage} alt="/" />
             </div>
             <div id="blog-sidebar-data">
               <h3 className="blog-sidebar-title">Global Conference</h3>

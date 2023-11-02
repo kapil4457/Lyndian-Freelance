@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
+import ContactBanner from "./Images/contact-banner.jpg";
 const ContactUs = () => {
   const contacts = [
-  
     {
       title: "India",
       desc: "C202, Sai Paradise, Pune Bangalore Highway, Pune, MH, India",
@@ -64,11 +64,7 @@ const ContactUs = () => {
   };
   return (
     <div className="main-contact-us-cont">
-      <img
-        className="contact-us-bg-image"
-        src="https://themanagementtechnician.com/wp-content/uploads/2020/09/contact-banner.jpg"
-        alt=""
-      ></img>
+      <img className="contact-us-bg-image" src={ContactBanner} alt=""></img>
 
       <div className="left-contact-us">
         <h1 style={{ paddingBottom: "2rem" }}>Call Today for Advice</h1>
