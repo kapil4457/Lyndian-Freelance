@@ -16,7 +16,7 @@ import Novartis from "./Images/Novartis.png";
 import sabic from "./Images/sabic.png";
 import tata from "./Images/tata.jpg";
 import yaskawa from "./Images/yaskawa.png";
-
+import Mccain from "./Images/Macin.png";
 function Brands() {
   return (
     <>
@@ -29,7 +29,7 @@ function Brands() {
             </div>
             <div className="tmain">
               <div className="tcontent">
-                <img className="brandimage image1" src="/brand/Macin.png" />
+                <img className="brandimage image1" src={Mccain} />
               </div>
 
               <div className="tcontent">
